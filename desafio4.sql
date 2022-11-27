@@ -153,7 +153,7 @@ CREATE TABLE answers(
     FOREIGN KEY ("question_id") REFERENCES questions(id)
     );    
 
-----en el caso de no haber aplicado de comiendo ON DELETE CASCADE se hacía de esta manera-----
+----en el caso de no haber aplicado del comienzo ON DELETE CASCADE se hacía de esta manera-----
     ALTER TABLE answers DROP CONSTRAINT answers_user_id_fkey, ADD FOREIGN KEY (users_id) REFERENCES users(id) ON DELETE CASCADE;
 
 
