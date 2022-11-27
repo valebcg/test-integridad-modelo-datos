@@ -172,5 +172,5 @@ datos.
 
 10. Altera la tabla existente de usuarios agregando el campo email con la restricción de 
 único.
----agregar ampo email---
+---agregar campo email---
 ALTER TABLE users ADD COLUMN email VARCHAR(30) UNIQUE;
